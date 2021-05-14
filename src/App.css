@@ -1,38 +1,66 @@
-.App {
-  text-align: center;
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+
+body {
+	font-family: "Poppins", sans-serif;
+}
+.container {
+	width: 90%;
+	margin: auto;
+	padding: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.input-field {
+	padding: 10px;
+	outline: none;
+	border: none;
+	border-bottom: 2px solid #333;
+	font-size: 18px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.btn {
+	padding: 10px;
+	outline: none;
+	border: none;
+	background: #333;
+	color: #fff;
+	border-radius: 5px;
+	font-size: 20px;
+	cursor: pointer;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.list {
+	list-style: none;
+	font-size: 20px;
+	display: flex;
+	flex-wrap: wrap;
+	color: #fff;
 }
 
-.App-link {
-  color: #61dafb;
+.list-item {
+	background: #333;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	padding: 10px;
+	width: 45%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.center {
+	text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+	body {
+		overflow-x: hidden;
+	}
+	.list-item {
+		width: 90%;
+		margin-left: -1.5rem;
+	}
+	.container {
+		width: 100%;
+	}
+	.input-field {
+		margin-bottom: 1rem;
+	}
 }
